@@ -181,7 +181,12 @@
     </Compile>
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\Customers.cs" />
+    <Compile Include="Models\ViewModel\Customers.cs" />
+    <Compile Include="Models\Products\Images.cs" />
+    <Compile Include="Models\Products\Options.cs" />
+    <Compile Include="Models\Products\Product.cs" />
+    <Compile Include="Models\Products\Variant.cs" />
+    <Compile Include="Models\ViewModel\Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -224,6 +229,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\IndexAsync.cshtml" />
+    <Content Include="Views\Home\Products.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 using ShopifyApiData.Models;
 
 using ShopifyApiData.Core;
+using ShopifyApiData.Models.ViewModel;
 
 namespace ShopifyApiData.Controllers
 {
@@ -29,7 +30,14 @@ namespace ShopifyApiData.Controllers
       //return View(customers);
       return View(customers);
     }
-   
+
+
+    public ActionResult Products()
+    {
+      var products = CustomerResponse.gethttpResponse<Products>(BaseUri,"products.json");
+      var listofProducts = products.Product.ToList();
+      return View(listofProducts);
+    }
     public ActionResult About()
     {
       ViewBag.Message = "Your application description page.";
