@@ -1,123 +1,127 @@
-﻿@model IEnumerable<ShopifyApiData.Models.Customer>
+@model IEnumerable<ShopifyApiData.Models.Customer>
 
 @{
-    ViewBag.Title = "IndexAsync";
+  ViewBag.Title = "IndexAsync";
+    Layout = null;
 }
 
-<h2>IndexAsync</h2>
+<h2>Customer</h2>
+
+
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+  @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AcceptsMarketing)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreatedAt)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UpdateAt)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LastName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.OrderCount)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TotalSpent)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LastOrderId)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Note)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VerifiedEmail)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MultipassIdentifier)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TaxExempt)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Phone)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Tags)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LastOrderName)
-        </th>
-        <th></th>
-    </tr>
+  <tr>
+    <th>
+      @Html.DisplayNameFor(model => model.Email)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.AcceptsMarketing)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.CreatedAt)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.UpdateAt)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.FirstName)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.LastName)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.OrderCount)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.TotalSpent)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.LastOrderId)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Note)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.VerifiedEmail)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.MultipassIdentifier)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.TaxExempt)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Phone)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.Tags)
+    </th>
+    <th>
+      @Html.DisplayNameFor(model => model.LastOrderName)
+    </th>
+    <th></th>
+  </tr>
 
-@foreach (var item in Model) {
+  @foreach (var item in Model)
+  {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AcceptsMarketing)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreatedAt)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UpdateAt)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FirstName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LastName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OrderCount)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TotalSpent)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LastOrderId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Note)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VerifiedEmail)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MultipassIdentifier)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TaxExempt)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Phone)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Tags)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LastOrderName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Email)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.AcceptsMarketing)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.CreatedAt)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.UpdateAt)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.FirstName)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.LastName)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.OrderCount)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.TotalSpent)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.LastOrderId)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Note)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.VerifiedEmail)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.MultipassIdentifier)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.TaxExempt)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Phone)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Tags)
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.LastOrderName)
+      </td>
+      <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+      </td>
     </tr>
-}
+  }
 
 </table>

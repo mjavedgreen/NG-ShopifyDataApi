@@ -20,18 +20,23 @@ namespace ShopifyApiData.Controllers
     private string BaseUrl = "https://8f1814591b650441af166fff21eedd2e:8ed8d6d70fe5c6c5e705a4454d3f79c0@skfdev.myshopify.com/";
     Uri BaseUri = new Uri("https://8f1814591b650441af166fff21eedd2e:8ed8d6d70fe5c6c5e705a4454d3f79c0@skfdev.myshopify.com/admin/");
     //private T resultData;
+    [HttpGet]
     public  ActionResult IndexAsync()
-    {
+   {
 
       var abc = CustomerResponse.gethttpResponse<Customers>(BaseUri,"customers.json");
       //var a =typeof(HomeController).gethttpResponse(BaseUri);
       ////List<Customer> customers = a.Customer.ToList();
       var customers = abc.Customer.ToList();//a.Customer.ToList();
       //return View(customers);
-      return View(customers);
+      return PartialView(customers);
     }
 
-
+    public ActionResult Index()
+    {
+      return View();
+    }
+    [HttpGet]
     public ActionResult Products()
     {
       var products = CustomerResponse.gethttpResponse<Products>(BaseUri,"products.json");
