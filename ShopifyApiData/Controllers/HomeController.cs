@@ -43,6 +43,13 @@ namespace ShopifyApiData.Controllers
       var listofProducts = products.Product.ToList();
       return View(listofProducts);
     }
+
+    public ActionResult Orders()
+    {
+      var orders = CustomerResponse.gethttpResponse<Orders>(BaseUri, "orders.json");
+      var listOfOrders = orders.Order.ToList();
+      return View(listOfOrders);
+    }
     public ActionResult About()
     {
       ViewBag.Message = "Your application description page.";

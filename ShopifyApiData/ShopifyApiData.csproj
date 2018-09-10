@@ -181,11 +181,20 @@
     </Compile>
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Orders\ClientDetails.cs" />
+    <Compile Include="Models\Orders\LineItem.cs" />
+    <Compile Include="Models\Orders\Order.cs" />
+    <Compile Include="Models\Orders\OrdersAddress.cs" />
+    <Compile Include="Models\Orders\OriginLocation.cs" />
+    <Compile Include="Models\Orders\PaymentDetails.cs" />
+    <Compile Include="Models\Orders\Properties.cs" />
+    <Compile Include="Models\Orders\ShippingLine.cs" />
     <Compile Include="Models\ViewModel\Customers.cs" />
     <Compile Include="Models\Products\Images.cs" />
     <Compile Include="Models\Products\Options.cs" />
     <Compile Include="Models\Products\Product.cs" />
     <Compile Include="Models\Products\Variant.cs" />
+    <Compile Include="Models\ViewModel\Orders.cs" />
     <Compile Include="Models\ViewModel\Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -203,6 +212,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\ShopifyApiData20180910092421 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -230,6 +240,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\IndexAsync.cshtml" />
     <Content Include="Views\Home\Products.cshtml" />
+    <Content Include="Views\Home\Orders.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
