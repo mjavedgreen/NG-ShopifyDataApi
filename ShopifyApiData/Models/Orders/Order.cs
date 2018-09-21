@@ -120,6 +120,7 @@ namespace ShopifyApiData.Models.Orders
     public string TotalTipReceived { get; set; }
     [JsonProperty("line_items")]
     public LineItem[] LineItems { get; set; }
+    //public string[] LineItems { get; set; }
     [JsonProperty("shipping_lines")]
     public ShippingLine[] ShippingLines { get; set; }
     [JsonProperty("billing_address")]
@@ -131,7 +132,8 @@ namespace ShopifyApiData.Models.Orders
     [JsonProperty("client_details")]
     public ClientDetails ClientDetails { get; set; }
     [JsonProperty("refunds")]
-    public string[] Refunds { get; set; }
+    //public string[] Refunds { get; set; }
+    public Refund[] Refunds { get; set; }
     [JsonProperty("payment_details")]
     public PaymentDetails PaymentDetails { get; set; }
     [JsonProperty("customer")]

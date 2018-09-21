@@ -169,12 +169,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddOn\ShopifyApi.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ShopifyController.cs" />
+    <Compile Include="Controllers\ShopifyTwoController.cs" />
     <Compile Include="Core\CustomerResponse.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -188,6 +190,7 @@
     <Compile Include="Models\Orders\OriginLocation.cs" />
     <Compile Include="Models\Orders\PaymentDetails.cs" />
     <Compile Include="Models\Orders\Properties.cs" />
+    <Compile Include="Models\Orders\Refund.cs" />
     <Compile Include="Models\Orders\ShippingLine.cs" />
     <Compile Include="Models\ViewModel\Customers.cs" />
     <Compile Include="Models\Products\Images.cs" />
@@ -241,6 +244,7 @@
     <Content Include="Views\Home\IndexAsync.cshtml" />
     <Content Include="Views\Home\Products.cshtml" />
     <Content Include="Views\Home\Orders.cshtml" />
+    <Content Include="Views\ShopifyTwo\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
